@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #txt1:focus{
+            background-color: aqua;
+        }
+        .btn:active{
+            background-color: blue;
+            color: white;
+        }
+        h1::before{
+            content: '★';
+        }
+        h1::after{
+            content: '★';
+        }
+        .main{
+            height: 200px;
+            width: 100%;
+            border:10px solid black;
+             background-image: url('back.jpg');
+        }
+        .main img{
+            float: left;
+            /* opacity: 0.2; */
+           
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            /* visibility: hidden; */
+            display: none;
+            
+        }
+    </style>
+</head>
+<body>
+    <input type="text" name="" id="txt1">
+    <button class="btn">Click</button>
+
+    <h1>Welcome To app</h1>
+    <div class="main">
+        <div class="box"></div>
+        <p> <img src="flower.jpg" alt=""> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, libero harum voluptatum nisi quis doloremque earum laborum, distinctio ipsam est aut eaque cum aspernatur totam id at temporibus fuga recusandae?</p>
+    </div>
+</body>
+</html>
